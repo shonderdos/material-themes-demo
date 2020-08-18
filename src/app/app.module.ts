@@ -8,10 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import {MatCardModule} from "@angular/material/card";
+import { CustomComponentComponent } from './custom-component/custom-component.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CustomComponentComponent
   ],
   imports: [
     BrowserModule,

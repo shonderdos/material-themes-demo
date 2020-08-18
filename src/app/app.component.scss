@@ -8,11 +8,16 @@ mat-slide-toggle {
 }
 
 .content{
-  padding: 18px 0;
+  padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+
+    > * {
+      flex-basis: 100%;
+    }
 }
 
 mat-card{
-  width: 400px;
+  //width: 400px;
 }

@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+
+@mixin custom-element-theme($theme){
+  $custom-primary: map-get($theme, primary);
+
+
+  .background {
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    color: mat-color($custom-primary);
+  }
+}
+
+
