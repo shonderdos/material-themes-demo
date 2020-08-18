@@ -7,7 +7,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @include mat-core();
 
 $default-theme: mat-light-theme(mat-palette($mat-red), mat-palette($mat-amber), mat-palette($mat-red));
+$dark-theme: mat-dark-theme(mat-palette($mat-red), mat-palette($mat-amber), mat-palette($mat-red));
 
 .default-theme {
   @include angular-material-theme($default-theme)
+}
+
+.dark-theme {
+  @include angular-material-theme($dark-theme)
 }

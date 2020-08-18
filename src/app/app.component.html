@@ -1,6 +1,11 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <h1>Material Theme Demo</h1>
-    <mat-slide-toggle>Dark theme</mat-slide-toggle>
+    <mat-slide-toggle (change)="switchTheme($event)">Dark theme</mat-slide-toggle>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<div class="content">
+  <mat-card>Material Card Component</mat-card>
+</div>
+

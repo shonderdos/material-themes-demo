@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //  Angular Material Modules
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatSlideToggleModule } from "@angular/material/slide-toggle";
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
