@@ -1,1 +1,8 @@
+@import "~@angular/material/theming";
+@import "./custom-elements";
 $dark-theme: mat-dark-theme(mat-palette($mat-green), mat-palette($mat-amber), mat-palette($mat-red));
+
+@mixin dark-theme(){
+  @include angular-material-theme($dark-theme);
+  @include custom-components-theme($dark-theme);
+}

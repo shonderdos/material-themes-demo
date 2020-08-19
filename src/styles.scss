@@ -6,21 +6,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import "~@angular/material/theming";
 @include mat-core();
 
-@import "./app/custom-component/custom-component.component";
 @import "./themes/default-theme";
 @import "./themes/dark-theme";
 
-@mixin custom-components-theme($theme){
-  @include custom-element-theme($theme);
-}
-
-
 .default-theme {
-  @include angular-material-theme($default-theme);
-  @include custom-components-theme($default-theme);
+  @include default-theme();
 }
 
 .dark-theme {
-  @include angular-material-theme($dark-theme);
-  @include custom-components-theme($dark-theme);
+  @include dark-theme();
 }

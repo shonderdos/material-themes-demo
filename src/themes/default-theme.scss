@@ -1,1 +1,8 @@
+@import "~@angular/material/theming";
+@import "./custom-elements";
 $default-theme: mat-light-theme(mat-palette($mat-red), mat-palette($mat-amber), mat-palette($mat-red));
+
+@mixin default-theme(){
+  @include angular-material-theme($default-theme);
+  @include custom-components-theme($default-theme);
+}
